@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="page-content" id="page-content">
+        <section class="start-page-container" id="start-page-container">
+            <h1>Start Quiz</h1>
+            <p>
+                Try to answer the following Javascript-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds.
+            </p>
+
+            <button class="btn" id="start-btn">Start Quiz</button>
+        </section>
+
+        <section class="quiz-container" id="quiz-container">
+            <a href="/highscores">View Highscores</a>
+            <p class="timer" id="timer"></p>
+
+            <div class="question-container" id="question-container">
+                <h1 class="question-text" id="question-text">Question 1</h1>
+                <div class="answer-options-container" id="answer-options-container">
+                    <button class="btn" id="answer-option-one">Answer 1</button>
+                    <button class="btn" id="answer-option-two">Answer 2</button>
+                    <button class="btn" id="answer-option-three">Answer 3</button>
+                    <button class="btn" id="answer-option-four">Answer 4</button>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
