@@ -10,37 +10,37 @@ var questionBankDataObject = [
         answerOptions: ["1", "2", "3", "4"],
     },
     {
-        questionText: "question 1",
+        questionText: "question 2",
         correctAnswer: "3",
         answerOptions: ["1", "2", "3", "4"],
     },
     {
-        questionText: "question 1",
+        questionText: "question 3",
         correctAnswer: "3",
         answerOptions: ["1", "2", "3", "4"],
     },
     {
-        questionText: "question 1",
+        questionText: "question 4",
         correctAnswer: "3",
         answerOptions: ["1", "2", "3", "4"],
     },
     {
-        questionText: "question 1",
+        questionText: "question 5",
         correctAnswer: "3",
         answerOptions: ["1", "2", "3", "4"],
     },
     {
-        questionText: "question 1",
+        questionText: "question 6",
         correctAnswer: "3",
         answerOptions: ["1", "2", "3", "4"],
     },
     {
-        questionText: "question 1",
+        questionText: "question 7",
         correctAnswer: "3",
         answerOptions: ["1", "2", "3", "4"],
     },
     {
-        questionText: "question 1",
+        questionText: "question 8",
         correctAnswer: "3",
         answerOptions: ["1", "2", "3", "4"],
     }
@@ -83,7 +83,7 @@ var startBtnHandler = function (event) {
     var questionTextEl = document.createElement("h1");
     questionTextEl.className = "quetion-text";
     questionTextEl.id = "question-text";
-    questionTextEl.innerHTML = "Question 1";
+    questionTextEl.innerHTML = questionBankDataObject[currentQuestion].questionText
     questionContainerEl.appendChild(questionTextEl);
 
     //question options
@@ -95,25 +95,25 @@ var startBtnHandler = function (event) {
     var answerOptionOneEl = document.createElement("button");
     answerOptionOneEl.className = "btn";
     answerOptionOneEl.id = "answer-option-one";
-    answerOptionOneEl.innerHTML = "Answer 1";
+    answerOptionOneEl.innerHTML = questionBankDataObject[currentQuestion].answerOptions[0]
     answerOptionsContainerEl.appendChild(answerOptionOneEl);
 
     var answerOptionTwoEl = document.createElement("button");
     answerOptionTwoEl.className = "btn";
     answerOptionTwoEl.id = "answer-option-two";
-    answerOptionTwoEl.innerHTML = "Answer 2";
+    answerOptionTwoEl.innerHTML = questionBankDataObject[currentQuestion].answerOptions[1]
     answerOptionsContainerEl.appendChild(answerOptionTwoEl);
 
     var answerOptionThreeEl = document.createElement("button");
     answerOptionThreeEl.className = "btn";
     answerOptionThreeEl.id = "answer-option-three";
-    answerOptionThreeEl.innerHTML = "Answer 3";
+    answerOptionThreeEl.innerHTML = questionBankDataObject[currentQuestion].answerOptions[2]
     answerOptionsContainerEl.appendChild(answerOptionThreeEl);
 
     var answerOptionFourEl = document.createElement("button");
     answerOptionFourEl.className = "btn";
     answerOptionFourEl.id = "answer-option-four";
-    answerOptionFourEl.innerHTML = "Answer 4";
+    answerOptionFourEl.innerHTML = questionBankDataObject[currentQuestion].answerOptions[3]
     answerOptionsContainerEl.appendChild(answerOptionFourEl);
 
     pageContentEl.appendChild(quizContainerEl);
